@@ -1,5 +1,6 @@
 // bring in React from React
 import React from 'react'
+import Dopeness from '../Dopeness';
 
 // define our Welcome functional component
 function Post(props) {
@@ -8,11 +9,14 @@ function Post(props) {
 	return (
 		// Make sure to return some UI
         <div className="card">
-			<h2>Title: {props.title}</h2>
+			<h2>{props.title}</h2>
 			<p>By: {props.author}</p>
             <div>
             <p>Body: {props.body}</p>
             </div>
+			<div>
+				<Dopeness />
+			</div>
         </div>		
 	);
 }

@@ -1,24 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Welcome from './Welcome';
-import Post from './Post';
+import Home from "./components/Home";
 import reportWebVitals from './reportWebVitals';
-
-const post = {
-  title : "Little Women",
-  author: "Louisa May Alcott",
-  body: "4 sisters"
-}
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome name={"Jihye"}
-    location={"San Francisco"}/>
-
-  <Post title={post.title}
-    author={post.author}
-    body={post.body}/>
+    <Home />
 
   </React.StrictMode>,
   document.getElementById('root')
